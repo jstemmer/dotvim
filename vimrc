@@ -3,8 +3,7 @@ set nocompatible
 
 " pathogen
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 
 filetype on
 filetype indent on
