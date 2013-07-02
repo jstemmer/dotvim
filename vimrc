@@ -139,17 +139,18 @@ let g:tex_flavor='latex'
 " disable indentation for pasting
 nnoremap <F2> :set invpaste<CR>
 
-" bufexplorer: map b
-nnoremap <silent> <unique> <leader>b :BufExplorer<CR>
-
 " ignore files
 set wildignore+=*.class,*.rbc,*.6
 
-" ctrlp to <leader>v
-let g:ctrlp_map = '<leader>v'
+" Unite use fuzzy matcher and sort by rank
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
 
-" only update ctrlp window after typing has stopped
-let g:ctrlp_lazy_update = 1
+" Unite ctrlp replacement
+nnoremap <leader>v :<C-u>Unite -no-split -buffer-name=files -start-insert file_rec<cr>
+
+" Unite bufexplorer replacement
+nnoremap <leader>b :<C-u>Unite -no-split -buffer-name=buffer buffer<cr>
 
 " tagbar
 nnoremap <silent> <leader>t :TagbarToggle<CR>
