@@ -70,9 +70,6 @@
 [submodule "bundle/smali"]
 	path = bundle/smali
 	url = https://github.com/alderz/smali-vim.git
-[submodule "bundle/jedi"]
-	path = bundle/jedi
-	url = https://github.com/davidhalter/jedi-vim
 [submodule "bundle/nerdtree-tabs"]
 	path = bundle/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
