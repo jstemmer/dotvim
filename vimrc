@@ -26,6 +26,9 @@ set autoindent
 
 set backspace=start,indent
 
+" do not insert 2 spaces after a '.', '?' or '!' with a join command.
+set nojoinspaces
+
 " enable title
 set title
 
