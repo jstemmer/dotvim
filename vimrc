@@ -112,6 +112,9 @@ nnoremap <c-h> gT
 " set , as leader
 let mapleader = ","
 
+" set space as localleader
+let maplocalleader = " "
+
 " toggle NERDTree with <leader>d
 nnoremap <silent> <leader>d :NERDTreeToggle<cr>
 
