@@ -189,6 +189,9 @@ let g:Powerline_symbols = "compatible"
 " gundo
 nnoremap <leader>u :GundoToggle<cr>
 
+" orgmode
+let g:org_heading_shade_leading_stars = 0
+
 " start unfolded
 set foldlevel=99
 
