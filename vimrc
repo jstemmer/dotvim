@@ -189,6 +189,9 @@ let g:Powerline_symbols = "compatible"
 " gundo
 nnoremap <leader>u :GundoToggle<cr>
 
+" start unfolded
+set foldlevel=99
+
 " go tagbar
 let g:tagbar_type_go = {
 	\ 'ctagstype' : 'go',
