@@ -39,6 +39,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
+" fix typing }} in html only outputs a single }
+autocmd FileType html setlocal indentkeys=o,O,<Return>,<>>,!^F
+
 " line numbers
 set number
 
