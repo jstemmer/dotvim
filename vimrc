@@ -33,7 +33,7 @@ set nojoinspaces
 set title
 
 " ruby
-autocmd FileType ruby,eruby,cucumber,ansible set expandtab tabstop=2 shiftwidth=2 tabstop=2
+autocmd FileType ruby,eruby,cucumber,ansible,yaml set expandtab tabstop=2 shiftwidth=2 tabstop=2
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
