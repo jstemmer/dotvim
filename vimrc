@@ -180,6 +180,9 @@ nnoremap <leader>k :Gitv<cr>
 " go language code formatter
 nnoremap <leader>f :Fmt<cr>
 
+" use goimports instead of gofmt
+let g:gofmt_command = "goimports"
+
 " godoc
 nnoremap <leader>gd :Godoc
 
